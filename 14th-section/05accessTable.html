@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>访问表格元素</title>
+</head>
+<body>
+<table id="d" border="1">
+    <caption>疯狂Java讲义</caption>
+    <tr>
+        <td>疯狂Java讲义</td>
+        <td>轻量级Java EE企业应用实战</td>
+    </tr>
+    <tr>
+        <td>疯狂Ajax讲义</td>
+        <td>经典Java EE企业应用实战</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+    </tr>
+</table>
+<input type="button" value="表格标题"
+onclick="alert(document.getElementById('d').caption.innerHTML);"/>
+<input type="button" value="第二行、第三行"
+onclick="alert(document.getElementById('d').rows[0].cells[0].innerHTML);"/>
+</body>
+</html>
