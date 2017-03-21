@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list</title>
+</head>
+<body>
+<form action="http://www.crazyit.org">
+    下面是简单的下拉菜单：<br>
+    <select name="skills" id="skills">
+        <option value="java">Java 语言</option>
+        <option value="c">C 语言</option>
+        <option value="ruby">Ruby 语言</option>
+    </select><br>
+    下面是允许多选的列表框：<br>
+    <select name="books" id="books" multiple="multiple" size="4">
+        <option value="java">java</option>
+        <option value="android">android</option>
+        <option value="ee">ee</option>
+    </select><br>
+    下面是允许多选的列表框：<br>
+    <select name="leegang" id="leegang" multiple="multiple" size="6">
+        <optgroup label="疯狂Java 体系图书">
+            <option value="java" label="aaa">疯狂Java讲义</option>
+            <option value="c">c语言</option>
+            <option value="java">ee</option>
+        </optgroup>
+        <optgroup label="其他书籍">
+            <option value="struts">Struts 2.1 权威指南</option>
+            <option value="ror">RoR 敏捷开发最佳实践</option>
+        </optgroup><br>
+        <botton type="submit"><b>提交</b></botton>
+    </select>
+</form>
+</body>
+</html>
